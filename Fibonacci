@@ -1,0 +1,48 @@
+using System;
+using System.Globalization;
+
+
+namespace OFICIAL
+{
+    internal class Program
+    {
+        public static void Main()
+        {
+
+            
+                Console.Write("Digite um número: ");
+                int numero = int.Parse(Console.ReadLine());
+
+                if (PertenceFibonacci(numero))
+                {
+                    Console.WriteLine($"   ==>O número {numero} pertence à sequência de Fibonacci.");
+                }
+                else
+                {
+                    Console.WriteLine($"   ==>O número {numero} não pertence à sequência de Fibonacci.");
+                }
+            
+            
+                Console.ReadKey();
+        }
+
+            public static bool PertenceFibonacci(int n)
+            {
+
+                int a = 0, b = 1;
+                while (b < n)
+                {
+
+                //Mostrar a Sequência:
+                 Console.Write(a + " ");
+                //Gerar a Sequência:
+                int temp = a;
+                    a = b;
+                    b = temp + b;
+                }
+                return (b == n);
+            }
+     
+
+        }
+    }
