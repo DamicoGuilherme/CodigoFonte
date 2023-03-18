@@ -1,0 +1,110 @@
+using System;
+using System.Globalization;
+
+
+namespace OFICIAL
+{
+    internal class Program
+    {
+        public static void Main()
+        {
+
+            //A: 
+            int a = 1;
+            Console.WriteLine("Digite o numero de Sequências que deseja mostrar: ");
+            int m = int.Parse(Console.ReadLine());
+            
+            
+            for(int i = 0; i < m; i++)
+            {
+                 a =  a + 2;
+                
+                Console.Write(a + " ");
+            }
+
+            
+            Console.WriteLine("***************************************************");
+            Console.WriteLine("***************************************************");
+            Console.WriteLine("***************************************************");
+
+            //B:
+            int b = 2;
+            Console.WriteLine("Digite o numero de Sequências que deseja mostrar: ");
+            int z = int.Parse(Console.ReadLine());
+
+
+            for (int i = 0; i < z; i++)
+            {
+                b = b * 2;
+
+                Console.Write(b + " ");
+            }
+
+            Console.WriteLine("***************************************************");
+            Console.WriteLine("***************************************************");
+            Console.WriteLine("***************************************************");
+
+
+            //C:
+
+            int c = 1;
+            Console.WriteLine("Digite o numero de Sequências que deseja mostrar: ");
+            int n = int.Parse(Console.ReadLine());
+            int l = 2;
+
+            for (int i = 0; i < n; i++)
+            {
+                
+                c = 1 + c + l;
+                l = l + 2; 
+                
+                Console.Write(c + " ");
+            }
+
+            Console.WriteLine("***************************************************");
+            Console.WriteLine("***************************************************");
+            Console.WriteLine("***************************************************");
+
+
+            double d = 0;
+            Console.WriteLine("Digite o numero de Sequências que deseja mostrar: ");
+            int k = int.Parse(Console.ReadLine());
+            int p = 2;
+
+            for(int i = 0; i < k; i++)
+            {
+                if (d % 2 == 0)
+                {
+                    
+                    d = Math.Pow(p, 2);
+                    Console.Write(d + " ");
+                    p = p + 2;
+                }
+            }
+
+
+
+            Console.WriteLine("***************************************************");
+            Console.WriteLine("***************************************************");
+            Console.WriteLine("***************************************************");
+
+            //D:
+            Console.Write("Digite o numero de Sequências que deseja mostrar: ");
+            int j = Convert.ToInt32(Console.ReadLine());
+
+            int t = 0, y = 1;
+            for (int i = 0; i < j; i++)
+            {
+                Console.Write(t + " ");
+                int temp = t;
+                t = y;
+                y = temp + y;
+            }
+
+
+                Console.ReadKey();
+
+
+        }
+    }
+}
